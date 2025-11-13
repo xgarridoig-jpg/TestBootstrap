@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milo — Catfluencer 🐾</title>
+
+    <!-- 1) Se incorpora Bootstrap por CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- 3) Navbar con el título del sitio y dos enlaces -->
+    <nav class="navbar navbar-expand-lg navbar-light roseviolet-nav shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-dark" href="./index.html">
+          Milo 🐱✨
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 text-dark"
+                href="https://github.com/xgarridoig-jpg"
+                target="_blank"
+              >
+                Mi GitHub
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 text-dark"
+                href="https://www.thecatapi.com"
+                target="_blank"
+              >
+                TheCatAPI 🐾
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 4) Sección tipo HERO -->
+    <section class="p-5 mb-4 text-center hero-banner-roseviolet">
+      <div class="container py-5 hero-content">
+        <h1 class="hero-banner-title fw-bold">
+          Milo — Tu Catfluencer Favorito 😺✨
+        </h1>
+
+        <p class="hero-banner-subtitle">
+          Elegancia, ternura y una presencia única en cada fotografía.
+        </p>
+
+        <div class="mt-4">
+          <button
+            class="btn btn-roseviolet btn-lg px-4"
+            onclick="mostrarAlerta()"
+          >
+            Ver estadísticas de Milo 📊
+          </button>
+        </div>
+
+        <div
+          id="alerta"
+          class="alert alert-roseviolet mt-3 d-none"
+          role="alert"
+        >
+          Milo tiene más de 25k seguidores y un engagement del 14%. 🐾✨
+        </div>
+      </div>
+    </section>
+
+    <!-- BIO DEL INFLUENCER -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4 section-title">
+        Sobre Milo — El Catfluencer 😼📸
+      </h2>
+
+      <p class="text-center fs-5 text-muted mb-4">
+        Milo es un gato rescatado que llegó a su familia cuando apenas tenía unos meses.
+        Hoy, con dos años y viviendo en Temuco, disfruta una vida llena de cariño,
+        juegos y aventuras. Su historia refleja amor, resiliencia y una personalidad
+        única capaz de iluminar cualquier día.
+      </p>
+
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+          <div class="card shadow border-0 roseviolet-card">
+            <img
+              src="./assets/img/milo1.jpg"
+              class="card-img-top"
+              alt="Sesión de fotos"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sesiones de Fotos</h5>
+              <p class="card-text">
+                Milo captura corazones con cada pose delicada.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card shadow border-0 roseviolet-card">
+            <img
+              src="./assets/img/milo2.jpg"
+              class="card-img-top"
+              alt="Colaboraciones"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Colaboraciones</h5>
+              <p class="card-text">
+                Marcas sofisticadas eligen su estilo rosa-violeta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card shadow border-0 roseviolet-card">
+            <img
+              src="./assets/img/milo3.jpg"
+              class="card-img-top"
+              alt="Aventuras"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Aventuras</h5>
+              <p class="card-text">
+                Explora el mundo con una elegancia natural.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALERÍA TIPO INSTAGRAM -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4 section-title">Galería Oficial 📸</h2>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/milo4.jpg"
+            class="img-fluid gallery-img shadow"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/milo5.jpg"
+            class="img-fluid gallery-img shadow"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/milo6.jpg"
+            class="img-fluid gallery-img shadow"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/milo7.jpg"
+            class="img-fluid gallery-img shadow"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA SEGUIRLO -->
+    <div class="container text-center my-5">
+      <h3 class="mb-3 section-title">¿Quieres seguir las aventuras de Milo?</h3>
+      <a
+        href="https://www.instagram.com/milo_gato/"
+        class="btn btn-roseviolet btn-lg px-4"
+        target="_blank"
+      >
+        Síguelo en Instagram 🐾✨
+      </a>
+    </div>
+
+    <!-- HISTORIA DE MILO -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4 section-title">La Historia de Milo 🐾</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="roseviolet-card p-4 shadow">
+            <p class="fs-5 text-muted text-center mb-4">
+              Milo fue rescatado cuando era apenas un pequeño gatito. Con dedicación,
+              cariño y una segunda oportunidad, creció fuerte y curioso. Hoy tiene dos años
+              y vive en Temuco, donde disfruta una vida feliz rodeado de aventuras,
+              juegos y muchas fotografías que inspiran a miles de seguidores.
+            </p>
+
+            <div class="row text-center">
+              <div class="col-6 col-md-4 mb-3">
+                <div class="p-3 border rounded shadow-sm bg-white">
+                  <h5 class="mb-1">2 años</h5>
+                  <small class="text-muted">Edad actual</small>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 mb-3">
+                <div class="p-3 border rounded shadow-sm bg-white">
+                  <h5 class="mb-1">Rescatado</h5>
+                  <small class="text-muted">Desde bebé</small>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mb-3">
+                <div class="p-3 border rounded shadow-sm bg-white">
+                  <h5 class="mb-1">Temuco</h5>
+                  <small class="text-muted">Su hogar actual</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4 section-title">Contacto 📬</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+
+          <form class="roseviolet-card p-4 shadow">
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Nombre</label>
+              <input type="text" class="form-control" placeholder="Tu nombre completo" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Correo electrónico</label>
+              <input type="email" class="form-control" placeholder="tunombre@email.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Mensaje</label>
+              <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+
+            <div class="text-center mt-3">
+              <button type="submit" class="btn btn-roseviolet px-4 py-2">
+                Enviar mensaje ✉️
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-dark py-3 mt-5 roseviolet-footer">
+      <p class="mb-0">
+        Ejercicio Práctico - Lección 4 hecho por <strong>Ximena Garrido</strong>
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 6) Script que activa la alerta -->
+    <script>
+      function mostrarAlerta() {
+        document.getElementById("alerta").classList.remove("d-none");
+      }
+    </script>
+
+  </body>
+</html>
